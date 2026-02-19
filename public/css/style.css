@@ -1,0 +1,129 @@
+﻿* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0a0a1a;
+  color: #c8d0e0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  background: rgba(15, 15, 35, 0.9);
+  border-bottom: 1px solid rgba(100, 140, 255, 0.15);
+}
+
+header h1 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #7aa2f7;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #565f89;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#status {
+  margin-left: auto;
+  font-size: 12px;
+  color: #565f89;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 49px);
+}
+
+#sidebar {
+  width: 240px;
+  padding: 16px;
+  background: rgba(15, 15, 35, 0.7);
+  border-right: 1px solid rgba(100, 140, 255, 0.1);
+  overflow-y: auto;
+}
+
+#sidebar h2 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #565f89;
+  margin-bottom: 12px;
+}
+
+#create-btn {
+  width: 100%;
+  padding: 8px;
+  background: rgba(122, 162, 247, 0.15);
+  border: 1px solid rgba(122, 162, 247, 0.3);
+  color: #7aa2f7;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+#create-btn:hover { background: rgba(122, 162, 247, 0.25); }
+
+#universe-list {
+  list-style: none;
+}
+
+#universe-list li {
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+#universe-list li:hover { background: rgba(122, 162, 247, 0.1); }
+#universe-list li.active { background: rgba(122, 162, 247, 0.2); border: 1px solid rgba(122, 162, 247, 0.3); }
+
+#map-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#detail-panel {
+  width: 280px;
+  padding: 16px;
+  background: rgba(15, 15, 35, 0.7);
+  border-left: 1px solid rgba(100, 140, 255, 0.1);
+  overflow-y: auto;
+}
+
+#detail-panel h2 {
+  font-size: 14px;
+  color: #7aa2f7;
+  margin-bottom: 12px;
+}
+
+#detail-content {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.resource-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(100, 140, 255, 0.05);
+}
+
+.resource-label { color: #565f89; }
+.resource-value { color: #c8d0e0; }

@@ -1,0 +1,35 @@
+﻿{
+    "name":  "univa",
+    "version":  "1.0.0",
+    "description":  "A persistent, scalable, asymmetric space civilization game",
+    "main":  "index.js",
+    "scripts":  {
+                    "build":  "tsc",
+                    "test":  "vitest run",
+                    "start":  "node dist/server/index.js",
+                    "dev":  "tsx watch src/server/index.ts",
+                    "db:migrate":  "drizzle-kit migrate",
+                    "db:generate":  "drizzle-kit generate"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "packageManager":  "pnpm@10.30.0",
+    "dependencies":  {
+                         "@hono/node-server":  "^1.19.9",
+                         "better-sqlite3":  "^12.6.2",
+                         "drizzle-orm":  "^0.45.1",
+                         "hono":  "^4.11.10"
+                     },
+    "devDependencies":  {
+                            "@biomejs/biome":  "^2.4.2",
+                            "@types/better-sqlite3":  "^7.6.13",
+                            "@types/node":  "^25.3.0",
+                            "drizzle-kit":  "^0.31.9",
+                            "tsx":  "^4.21.0",
+                            "typescript":  "^5.9.3",
+                            "vitest":  "^4.0.18"
+                        }
+}
